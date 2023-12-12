@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notification Example</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" sizes="192x192" href="../icons/appstore.png.192x192.png">
+    <meta name="theme-color" content="#BBE6E4"/>
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-database.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/js/script.js" defer></script>
+    <link rel="manifest" href="/manifest.json">
+</head>
+<body>
+    <div class="app-main" id="parent">
+        <header class="app-header">
+            <h1>Weather Forecast</h1>
+        </header>
+
+        <section class="search-section">
+          <input type="text" id="input-box" class="input-box" placeholder="Enter City Name">
+          <button id="search-button" class="search-button">Search</button>
+      </section>
+        <section class="weather-display" id="weather-body">
+        </section>
+    
+        <button id="view-button" class="view-button">View</button>
+
+        <footer class="app-footer">
+            <p>Weather App © 2023. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

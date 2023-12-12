@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Data Viewer</title>
+    <!-- Add any necessary CSS styles here -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="app-main" id="parent">
+        <header class="app-header">
+            <h1>Weather Data Viewer</h1>
+        </header>
+
+        <section class="weather-display" id="weather-data">
+            <h2>SAVED DATA</h2>
+            <!-- Weather data will be displayed here -->
+        </section>
+
+        <button id="back-button" class="back-button">Back</button>
+
+        <footer class="app-footer">
+            <p>Weather App © 2023. All rights reserved.</p>
+        </footer>
+
+        <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-database.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="js/viewData.js"></script>
+    </div>
+</body>
+</html>

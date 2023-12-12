@@ -1,0 +1,42 @@
+
+
+{
+  "name": "My Weather App",
+  "short_name": "Weather App",
+  "description": "An app which can search location and fetch that location weather.",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#BBE6E4",
+  "background_color": "#F0F6F6",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "/icons/appstore.png.192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/appstore.png.192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icons/CompressJPEG.online_512x512_image.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/CompressJPEG.online_512x512_image.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "serviceworker": {
+    "src": "service-worker.js",
+    "scope": "/"
+  }
+}
